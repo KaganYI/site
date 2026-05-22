@@ -134,9 +134,209 @@
             color: #91a1b7;
         }
 
-        
+        /* ---------------- FULL DEMO SCREEN ---------------- */
+        .demo-frame {
+            margin: 72px auto 0;
+            width: min(100%, 1280px);
+            border-radius: 26px;
+            padding: 10px;
+            background: linear-gradient(135deg, rgba(99, 102, 241, .5), rgba(6, 182, 212, .18), rgba(236, 72, 153, .35));
+            box-shadow:
+                0 44px 120px rgba(0, 0, 0, .58),
+                0 0 0 1px rgba(255, 255, 255, .08) inset;
+        }
 
-      
+        .demo-container {
+            position: relative;
+            background: #f4f8fd;
+            border-radius: 20px;
+            overflow: hidden;
+            text-align: left;
+            color: var(--m-text-main);
+            min-height: 724px;
+            box-shadow: 0 1px 0 rgba(255, 255, 255, .85) inset;
+        }
+
+        .demo-app {
+            display: grid;
+            grid-template-columns: 170px minmax(0, 1fr);
+            min-height: 724px;
+        }
+
+        .demo-sidebar {
+            background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+            border-right: 1px solid #e8eef8;
+            padding: 12px 8px 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            box-shadow: 10px 0 26px rgba(15, 23, 42, .035);
+            z-index: 2;
+        }
+
+        .demo-logo {
+            height: 34px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 0 4px 0 2px;
+        }
+
+        .demo-logo-mark {
+            width: 27px;
+            height: 27px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #f97316 0%, #ec4899 38%, #3b82f6 100%);
+            box-shadow: 0 7px 15px rgba(79, 70, 229, .22);
+            position: relative;
+        }
+
+        .demo-logo-mark:before {
+            content: "m";
+            position: absolute;
+            inset: 0;
+            display: grid;
+            place-items: center;
+            color: white;
+            font-weight: 900;
+            font-size: 17px;
+            line-height: 1;
+        }
+
+        .demo-logo-text strong {
+            display: block;
+            font-size: 18px;
+            letter-spacing: -1px;
+            color: #26334d;
+            line-height: .9;
+        }
+
+        .demo-logo-text span {
+            display: block;
+            font-size: 4.9px;
+            letter-spacing: .4px;
+            color: #77849a;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-top: 2px;
+        }
+
+        .demo-collapse {
+            margin-left: auto;
+            width: 23px;
+            height: 23px;
+            display: grid;
+            place-items: center;
+            border-radius: 7px;
+            border: 1px solid #e5edf7;
+            color: #72839e;
+            font-size: 11px;
+            background: #fff;
+        }
+
+        .demo-menu {
+            display: grid;
+            gap: 7px;
+        }
+
+        .demo-menu-item {
+            position: relative;
+            display: grid;
+            grid-template-columns: 34px 1fr 12px;
+            gap: 8px;
+            align-items: center;
+            min-height: 44px;
+            padding: 8px 8px;
+            border-radius: 15px;
+            border: 1px solid #eef3fa;
+            background: rgba(255, 255, 255, .82);
+            color: #26334d;
+            box-shadow: 0 5px 16px rgba(15, 23, 42, .035);
+        }
+
+        .demo-menu-item.active {
+            background: linear-gradient(135deg, #eef2ff, #f8fbff);
+            border-color: #dfe7ff;
+            box-shadow: 0 10px 26px rgba(99, 102, 241, .12);
+        }
+
+        .demo-menu-icon {
+            width: 31px;
+            height: 31px;
+            display: grid;
+            place-items: center;
+            border-radius: 11px;
+            font-size: 14px;
+        }
+
+        .demo-menu-icon.home {
+            background: linear-gradient(135deg, #6875ff, #8976ff);
+            color: #fff;
+        }
+
+        .demo-menu-icon.support {
+            background: #fff1f2;
+            color: #fb7185;
+        }
+
+        .demo-menu-icon.project {
+            background: #eef2ff;
+            color: #6366f1;
+        }
+
+        .demo-menu-icon.sales {
+            background: #fff7ed;
+            color: #f59e0b;
+        }
+
+        .demo-menu-icon.manage {
+            background: #ecfdf5;
+            color: #10b981;
+        }
+
+        .demo-menu-icon.portal {
+            background: #f5f3ff;
+            color: #8b5cf6;
+        }
+
+        .demo-menu-icon.report {
+            background: #ecfeff;
+            color: #06b6d4;
+        }
+
+        .demo-menu-icon.integration {
+            background: #eff6ff;
+            color: #0ea5e9;
+        }
+
+        .demo-menu-icon.system {
+            background: #eef2ff;
+            color: #64748b;
+        }
+
+        .demo-menu-text b {
+            display: block;
+            font-size: 10px;
+            letter-spacing: .35px;
+            line-height: 1.1;
+        }
+
+        .demo-menu-text small {
+            display: block;
+            font-size: 7px;
+            color: #6b7a90;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 92px;
+            margin-top: 2px;
+        }
+
+        .demo-menu-arrow {
+            color: #a8b3c5;
+            font-size: 14px;
+        }
+
         .demo-workspace {
             min-width: 0;
             display: grid;
