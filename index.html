@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solentask</title>
+    <meta name="description" content="Solentask ile projelerinizi daha hızlı ve akıcı yönetin.">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+
+    <nav>   
+        <div class="container nav-content">
+            <div class="logo-nav">Solentask</div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Solentask</h1>
+            <p>Solentask ile görevleri, ekipleri, takvimi ve operasyonel süreçleri tek ekranda; modern, hızlı ve
+                profesyonel bir arayüzle yönetin.</p>
+        </div>
+    </section>
+
+    <section class="section" id="features">
+        <div class="container">
+            <div style="text-align:center; margin-bottom:70px;">
+                <span class="section-tag">ÖZELLİKLER</span>
+                <h2
+                    style="font-size:clamp(2.2rem, 5vw, 3.1rem); margin-top:18px; font-weight:900; letter-spacing:-1.5px;">
+                    Daha hızlı, daha akıllı</h2>
+                <p style="max-width:720px;margin:18px auto 0;color:#8fa0b8;font-size:1.08rem;">Ekiplerin günlük iş
+                    akışını sadeleştiren, görev takibini görünür kılan ve yöneticilere net operasyon ekranı sunan modern
+                    yapı.</p>
+            </div>
+
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="icon-circle">⚡</div>
+                    <h3>Hızlı Görev Yönetimi</h3>
+                    <p>Görevleri, takipçileri, öncelikleri ve terminleri tek ekranda izleyin. Ekipler arası iş akışı
+                        kaybolmadan ilerler.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-circle">🔄</div>
+                    <h3>Esnek Çalışma Akışları</h3>
+                    <p>Destek, proje, yönetim ve müşteri portalı süreçlerini kuruma özel akışlarla takip edin.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-circle">📊</div>
+                    <h3>Gelişmiş Raporlama</h3>
+                    <p>Görev yoğunluğu, açık işler, ekip performansı ve operasyonel durumları anlaşılır panellerle
+                        görün.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-circle">🤖</div>
+                    <h3>Akıllı Operasyon Takibi</h3>
+                    <p>Gündem, takvim ve yapılacak işleri birlikte ele alarak günlük operasyonu daha kontrollü hale
+                        getirin.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-circle">🔗</div>
+                    <h3>Güçlü Entegrasyonlar</h3>
+                    <p>Servisler, veri akışları ve kurumsal sistemler arasında düzenli ve izlenebilir bağlantılar kurun.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-circle">🛠️</div>
+                    <h3>Özel Süreç Kurguları</h3>
+                    <p>Departman, kullanıcı, görev tipi ve süreç durumlarına göre şirketinize özel yönetim ekranları
+                        oluşturun.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section automation-block" id="automation">
+        <div class="container">
+            <div
+                style="display: grid; grid-template-columns: minmax(0,1fr) minmax(270px,1fr); gap: 72px; align-items: center;">
+                <div>
+                    <span class="section-tag">OTOMASYON MOTORU</span>
+                    <h2
+                        style="font-size: clamp(2.1rem, 4vw, 2.85rem); margin: 22px 0; font-weight:900; letter-spacing:-1px;">
+                        İşleri kendi haline bırakın</h2>
+                    <p style="font-size: 1.14rem; color: #8fa0b8; margin-bottom: 35px;">
+                        Solentask'ın akıllı tetikleyicileri ile tekrar eden işleri otomatikleştirin. Bir görev
+                        tamamlandığında ilgili kişilere bildirim gönderin, takvimi güncelleyin ve rapor akışını
+                        besleyin.
+                    </p>
+                </div>
+                <div class="code-snippet">
+                    <span style="color:#c084fc;">when</span> task.status_changed <span
+                        style="color:#60a5fa;">"Tamamlandı"</span><br>
+                    &nbsp;&nbsp;<span style="color:#c084fc;">then</span> notify_team(<span
+                        style="color:#f59e0b;">"Operasyon"</span>)<br>
+                    &nbsp;&nbsp;<span style="color:#c084fc;">and</span> create_activity_log(task.id)<br>
+                    &nbsp;&nbsp;<span style="color:#c084fc;">and</span> update_dashboard()
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo-desc">
+                    <div class="logo-nav" style="font-size:2.5rem;">Solentask</div>
+                    <p>Modern takımların tercih ettiği hızlı, düzenli ve ölçeklenebilir görev yönetim platformu.</p>
+                </div>
+            </div>
+
+            <div
+                style="margin-top:90px; padding-top:36px; border-top:1px solid rgba(255,255,255,0.06); text-align:center; color:var(--text-low); font-size:0.9rem;">
+                &copy; 2026 Solentask UI & Mavvo Design System. Tüm hakları saklıdır.
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
